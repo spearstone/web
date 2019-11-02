@@ -15,10 +15,14 @@ for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".
   mixpanel.init('763adbdbb8a18feb05212f3712c1af9a', {
     loaded: function(mixpanel) {
         distinct_id = mixpanel.get_distinct_id();
-        console.log('sending',distinct_id);
-        var t = mixpanel.track('Lander1',{debug:true, 'd_id':distinct_id});
-        console.log('sent',t);
+      console.log('loaded',distinct_id);
     }
   });
+  
+  function touch(){
+    console.log('sending',distinct_id);
+    var t = mixpanel.track('Lander1',{debug:true, 'd_id':distinct_id});
+    console.log('sent',t);
+  }
 </script><!-- end Mixpanel -->
-  </head><body style="margin: 0px; background: #eee; text-align:center; height:100%;"><img class="centered" src="Spearstone-Partners_temp.png"><script type="text/javascript"></script></body></html>
+  </head><body style="margin: 0px; background: #eee; text-align:center; height:100%;" onload="touch();"><img class="centered" src="Spearstone-Partners_temp.png"><script type="text/javascript"></script></body></html>
