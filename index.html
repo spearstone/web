@@ -1,25 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="Product, consultant, startup, product development, contract, founder, advice">
+	<meta name="description" content="Spearstone filters, tests, and polishes founder + opportunity combinations.  Our product is highly-investible founder-opportunity combinations.  Training founders to sink above the chasm.">
+	<title>Spearstone Partners</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114.png">
+	<link href="css/uikit.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
+</head>
+<body data-ng-app="myPage" data-ng-controller="myPageCtrl">
 
-<html><head><meta name="viewport" content="width=device-width, minimum-scale=0.1"><title>Spearstone Partners</title><link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet"><style>
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-user-select: none;
-  width:60%;
-}</style>
-<!-- start Mixpanel --><script type="text/javascript">
-  var distinct_id=null;
-  (function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-  mixpanel.init('763adbdbb8a18feb05212f3712c1af9a', {
-    loaded: function(mixpanel) {
-        distinct_id = mixpanel.get_distinct_id();
-    }
-  });
-  
-  function touch(){
-    var t = mixpanel.track('Lander1',{debug:true, 'd_id':distinct_id});
-  }
-</script><!-- end Mixpanel -->
-  </head><body style="margin: 0px; background: #eee; text-align:center; height:100%;" onload="touch();"><img class="centered" src="Spearstone-Partners_temp.png"><script type="text/javascript"></script></body></html>
+<!-- Spinner -->
+<div class="spinner">
+	<div class="spinner_wrapper">
+		<div class="spinner_folding_cube">
+			<div class="spinner_cube1 spinner_cube"></div>
+			<div class="spinner_cube2 spinner_cube"></div>
+			<div class="spinner_cube4 spinner_cube"></div>
+			<div class="spinner_cube3 spinner_cube"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Page wrapper -->
+<div class="wrapper">
+
+<!-- Header -->
+<header class="uk-small-hidden header">
+	<nav class="uk-navbar header-nav">
+		<div class="uk-container uk-container-center">
+			<a class="uk-navbar-brand logo_link">
+				<img class="uk-responsive-height logo" src="images/Spearstone-Partners_logo.png" alt="">
+			</a>
+			<div class="uk-navbar-flip uk-visible-large">
+				<ul class="uk-navbar-nav header-nav-list">
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_features header_nav_list_item_link" href="#">Our Approach</a>
+					</li>
+					<li class="header_nav_list_item">
+						<a data-ng-click="scrollNav($event)" class="link_contact header_nav_list_item_link" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+				<div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<!-- Text container -->
+<section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden sepia_overlay container">
+	<div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+
+		<div class="container_block">
+			<h1 class="uk-h1 container_title">VALUE-CENTRIC</h1>
+			<h2 class="uk-h2 container_subtitle">SUCCESS OPERATIONS</h2>
+			<div class="container_description">Businesses without value-centric operations are useless and invariably collapse.  At Spearstone, we help founders and established organizations forge continuously-improving products, led by battle-proven teams, with sustainable impact.</div>
+			<!-- BUTTONS -->
+			<div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
+				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded container_button_subscribe">I have an idea for a business</div>
+				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded container_button_subscribe">My startup needs help</div>
+				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded container_button_subscribe">Our enterprise needs expertise</div>
+			</div>
+		</div>
+
+	</div>
+	<div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
+</section>
+
+<!-- Elements -->
+<section class="elements section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+	<h3 class="uk-h3 uk-margin-bottom animated section_title elements_title">End-to-End Approach</h3>
+	<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Dynamic situational-rubrics for great data-driven opportunities led by investible data-focused founders.</h4>
+		<div class="uk-grid uk-grid-large">
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-trophy uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Gamified Filtering Process</h4>
+					<p class="elements_item_desc">Quickly filter, understand, and test the opportunities and teams’ ability to execute.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-fire uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Lean Product Furnace</h4>
+					<p class="elements_item_desc">Product, Simplicity, and Value Sciences applied from discovery to prototype to revenue.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-connectdevelop uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">Sustainable & Repeatable Success</h4>
+					<p class="elements_item_desc">Continuous and automated feedback loop built into the team, the product, and the business.</p>
+				</div>
+			</div>
+			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+				<div class="uk-margin-large-bottom elements_item">
+					<div class="uk-icon-diamond uk-border-circle elements_item_label"></div>
+					<h4 class="uk-h4 elements_item_text">720&deg; Spearstone Report</h4>
+					<p class="elements_item_desc">Investor-ready organization and actionable packaging for proven founder + opportunity combinations.</p>
+				</div>
+			</div>
+		</div>
+		<div class="uk-margin-top footer_message">scroll to learn more...</div>
+	</div>
+</section>
+
+<!-- Description -->
+<section class="description section">
+	<div class="uk-grid uk-grid-collapse">
+		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
+			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
+				<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Automated Innovation Driving Predictable & Measurable Success</h3>
+				<p class="animated description_text">Removing cost, time, and complexity of disruption, whether from scratch or from within existing paradigms.</p>
+			</div>
+		</div>
+		<div class="uk-width-large-1-2 description_image" data-image="images/Spearstone_ProcessLoop.png"></div>
+	</div>
+</section>
+
+<!-- Description secondary -->
+<section class="description description_secondary section">
+	<div class="uk-grid uk-grid-collapse">
+		<div class="uk-width-large-1-2 description_image" data-image="images/Spearstone_Graph.png"></div>
+		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
+			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
+				<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Necessary Trifecta for Viable Innovation.</h3>
+				<div class="animated description_text"><ul><li>Better navigation of market limitations;</li>
+					<li>in tandem with reduction of execution risk; and</li>
+					<li>in direct context with the executing participants.</li></ul></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Description secondary -->
+<section class="description description_secondary section">
+	<div class="uk-grid uk-grid-collapse">
+		<div class="uk-width-large-2-3 uk-flex uk-flex-middle">
+			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
+				<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Trustable, Actionable, and Sustaining</h3>
+				<div class="animated description_text"><ul><li>We rate each opportunity against 5 individual classic business metrics.</li>
+					<li>Clarifying the correlation of the outcomes, advantages, and opportunities against a common excellence scale.</li></ul></div>
+			</div>
+		</div>
+		<div class="uk-width-large-1-3 description_image" data-image="images/Spearstone_ReportComponents.png"></div>
+	</div>
+</section>
+
+<!-- Description secondary -->
+<section class="description description_secondary section">
+		<div class="uk-grid uk-grid-collapse">
+			<div class="uk-width-large-1-3 description_image" data-image="images/Spearstone_IScore.png"></div>
+			<div class="uk-width-large-2-3 uk-flex uk-flex-middle">
+				<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
+					<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Investor/Sponsor Tailored Scoreing</h3>
+					<div class="animated description_text"><ul><li>We provide a highly-tailored, proprietary rating.</li>
+							<li>Tempers the risks, benefits, and continuous potential of the combined excellence scores with isolated & private Sponsor variables.</li>
+							<li>Ensure the most investible expectations.
+							</li></ul></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Description secondary -->
+<section class="description description_secondary section">
+		<div class="uk-grid uk-grid-collapse">
+			
+			<div class="uk-width-large-1-3 iscore_image"><img src="images/Picture2.png" style="width:100%;"/></div>
+			<div class="uk-width-large-2-3 uk-flex uk-flex-middle">
+				<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
+					<h3 class="uk-h3 uk-margin-large-bottom animated description_title">720&deg; Spearstone Report</h3>
+					<div class="animated description_text"><ul><li>GTM strategy<br/><small>
+							phases, tests, channels, partners, risks, metrics</small></li>
+							<li>Team Growth Strategy<br/><small>
+							leadership capacity, risks, transitions, metrics</small></li>
+							<li>Detailed Market Analysis<br/><small>
+							competition, advantages, segmentation, metrics</small></li>
+							<li>Defensibility Analysis<br/><small>
+							patentability, in/direct variables, lobbies, positioning, metrics</small></li>
+							<li>Privacy / Regulatory Analysis<br/><small>
+							efforts, costs, risks, social</small></li>
+							<li>Business Model Strategy<br/><small>
+							key contributors, cost/benefit analysis, value stream</small></li>
+							<li>Detailed Financials Preparation<br/><small>
+							GAAP, IFRS, 3yr Pro Forma, metrics</small></li></ul></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Address -->
+<section class="address section">
+	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+		<h3 class="uk-h3 animated section_title address_title">Contacts</h3>
+		<h4 class="uk-h4 animated uk-margin-large-bottom section_subtitle">Coming soon, globally!</h4>
+
+
+				<div class="uk-margin-large-bottom address_item">
+					<div class="uk-icon-envelope-o address_label"></div>
+					<h4 class="address_title">Email address</h4>
+					<div class="address_text"><a href="mailto:hello@spearstone.partners"  data-ng-click="track('email')">hello@spearstone.partners</a></div>
+				</div>
+
+	
+	</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="uk-container uk-container-center uk-text-center">
+		<div class="footer_message">© 2019 Spearstone, Inc.&nbsp;&nbsp;All Rights Reserved</div>
+	</div>
+</footer>
+
+<!-- Scroll arrow -->
+<div data-ng-click="scrollTop()" class="scroll_top"></div>
+
+</div>
+
+<!-- Mobile menu -->
+<div id="mobile_nav" class="uk-offcanvas">
+	<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+		<ul class="uk-nav uk-nav-offcanvas">
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_features" href="#">How it works!</a>
+			</li>
+			<li class="">
+				<a data-ng-click="scrollNav($event)" class="link_contact" href="#">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/ngTouch.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/uikit.min.js"></script>
+<script type="text/javascript" src="js/slideshow.min.js"></script>
+<script type="text/javascript" src="js/slideshow-fx.min.js"></script>
+<script type="text/javascript" src="js/slider.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/countUp.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="js/scripts.ang.js"></script>
+</body>
+</html>
